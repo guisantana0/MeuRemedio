@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/procurar">
+        <menu android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_remedio"
+            android:icon="@drawable/pill"
+            android:title="@string/remedios" />
+        <item
+            android:id="@+id/nav_farmacia"
+            android:icon="@drawable/drugstore"
+            android:title="@string/farmacias" />
+        </menu>
+    </item>
+    <item android:title="@string/historico">
+        <menu>
+            <item
+                android:id="@+id/meus_pedidos"
+                android:icon="@drawable/meus_pedidos"
+                android:title="@string/meus_favoritos" />
+        </menu>
+    </item>
+
+    <item android:title="@string/ajuda">
+        <menu>
+            <item
+                android:id="@+id/nav_ajuda"
+                android:icon="@drawable/ajuda"
+                android:title="@string/ajuda" />
+            <item android:id="@+id/nav_sair"
+                android:icon="@drawable/logout"
+                android:title="@string/sair" />
+        </menu>
+
+    </item>
+</menu>

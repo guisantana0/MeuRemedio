@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Meu Remédio</string>
+    <string name="mapa">Mapa</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+
+    <string name="action_settings">Opções</string>
+
+    <string name="procurar">Procurar</string>
+    <string name="menu_search">Busca</string>
+    <string name="search_hint">Qual remédio procura?</string>
+    <string name="remedios">Remédios</string>
+    <string name="farmacias">Farmácias</string>
+    <string name="historico">Histórico</string>
+    <string name="meus_favoritos">Meus Favoritos</string>
+    <string name="suporte">Suporte</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="sair">Sair</string>
+    <string name="title_activity_mapa_busca">Encontrar...</string>
+
+</resources>
