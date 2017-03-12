@@ -1,10 +1,13 @@
-package mysticlabs.meuremedio;
+package mysticlabs.meuremedio.visao;
 
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,8 +18,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import mysticlabs.meuremedio.R;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FragmentStatePagerAdapter adapterFragmentos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+//        adapterFragmentos = new viewPaging(getSupportFragmentManager());
+//        ((ViewPager) findViewById(R.id.content_principal)).setAdapter(adapterFragmentos);
     }
 
     @Override
@@ -90,6 +101,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_remedio) {
             Intent intencao = new Intent ();
             intencao.setClass(this,Mapa.class);
+            startActivity(intencao);
+            //getSupportFragmentManager().beginTransaction().replace(R.id.content_principal,adapterFragmentos.getItem(0)).commit();
+//            getSupportFragmentManager().beginTransaction().add(adapterFragmentos.getItem(0),"mapa");
             //getSupportFragmentManager().beginTransaction().replace();
         } else if (id == R.id.nav_farmacia) {
 
@@ -105,4 +119,47 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public class viewPaging extends FragmentStatePagerAdapter{
+
+        Fragment oldFragment, mapa = null;
+        FragmentManager mFM;
+        public viewPaging(FragmentManager fm) {
+            super(fm);
+            mFM = fm;
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+
+//            switch (position){
+//                case 0:
+//                    if (mapa == null)
+//                        mapa = new Mapa(mFM);
+//                    return mapa;
+//
+//            }
+            return null;
+        }
+
+        @Override
+        public int getCount() {
+            return 1;
+        }
+    }
+
 }

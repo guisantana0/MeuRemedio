@@ -7,10 +7,10 @@
             android:id="@+id/nav_remedio"
             android:icon="@drawable/pill"
             android:title="@string/remedios" />
-        <item
-            android:id="@+id/nav_farmacia"
-            android:icon="@drawable/drugstore"
-            android:title="@string/farmacias" />
+            <item
+                android:id="@+id/nav_farmacia"
+                android:icon="@drawable/drugstore"
+                android:title="@string/farmacias" />
         </menu>
     </item>
     <item android:title="@string/historico">

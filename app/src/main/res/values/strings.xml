@@ -16,6 +16,6 @@
     <string name="suporte">Suporte</string>
     <string name="ajuda">Ajuda</string>
     <string name="sair">Sair</string>
-    <string name="title_activity_mapa_busca">Encontrar...</string>
+    <string name="title_activity_mapa_busca">Encontrar&#8230;</string>
 
 </resources>

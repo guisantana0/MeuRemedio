@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "515303513717",
+    "firebase_url": "https://buoyant-chain-97713.firebaseio.com",
+    "project_id": "buoyant-chain-97713",
+    "storage_bucket": "buoyant-chain-97713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515303513717:android:c3a89309108363a0",
+        "android_client_info": {
+          "package_name": "mysticlabs.meuremedio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515303513717-31eat1re1jt2aoe68innasba2ov3s1ia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mysticlabs.meuremedio",
+            "certificate_hash": "fe08725f58bea7b535ae9c36e31087db80dd3089"
+          }
+        },
+        {
+          "client_id": "515303513717-6u69erc0ifie0k689b0lmdsf67onkbg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA93uejTREFEJLNoTO2oJeSPwVztlmZOIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515303513717-6u69erc0ifie0k689b0lmdsf67onkbg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
