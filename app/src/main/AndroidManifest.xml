@@ -9,14 +9,20 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name="android.support.multidex.MultiDexApplication">
-        <!--<meta-data android:name="android.support.multidex.MultiDexApplication"/>-->
+        android:theme="@style/AppTheme">
+
+        <!-- <meta-data android:name="android.support.multidex.MultiDexApplication"/> -->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -28,6 +34,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <activity
             android:name=".visao.MainActivity"
             android:label="@string/app_name"
@@ -41,10 +48,11 @@
 
         <activity
             android:name=".visao.Mapa"
-            android:label="@string/mapa">
-
-        </activity>
-
+            android:label="@string/mapa"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            ></activity>
     </application>
 
 </manifest>

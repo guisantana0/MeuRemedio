@@ -39,6 +39,17 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+//
+//
+//        mGoogleApiClient = new GoogleApiClient
+//                .Builder(this)
+//                .addApi(Places.GEO_DATA_API)
+//                .addApi(Places.PLACE_DETECTION_API)
+//                .addConnectionCallbacks(this)
+//                .addOnConnectionFailedListener(this)
+//                .build();
+
     }
 
 
@@ -60,4 +71,18 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(Home).title("Marker in Rondonopolis"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Home));
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+//        mGoogleApiClient.connect();
+    }
+
+    @Override
+    protected void onStop() {
+//        mGoogleApiClient.disconnect();
+        super.onStop();
+    }
+
+
 }
